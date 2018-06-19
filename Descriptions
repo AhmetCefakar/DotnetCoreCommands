@@ -1,0 +1,35 @@
+1_) Yeni bir uygulama oluşturmak: "dotnet new mvc --language c# --name ProjeName" komutu ile projenin türü, dili ve adı ile yeni bir proje oluşturulur.
+
+2_) Projenin dependisies'lerini indirip uygulamayı çalışır hale getiren komut: "dotnet restore"
+
+3_) Uygulamayı CLI ile yayımlamak(self contant): "dotnet publish -r win10-x64 -c Release"  
+=> '-r'den sonra çıktı alınacak işletim sistemi belirtiliyor. 'win10-x64', 'osx.10.11-x64', 'ubuntu.16.04-x64', 'win10-x64' vb. işletim sistemini belirten değerler alır.
+=> '-c'den sonra debug-release modda publish edileceği belirtiliyor.
+
+4_) Uygulamayı CLI ile yayımlamak(framework bağımlı): "dotnet publish -f netcoreapp2.0 -c Release('f netcoreapp2.0' sadece tek bir Sdk için publish ediliyorsa kullanılmaya bilir)" 
+
+5_) Uygulamaya CLI ile referans eklemek: ""
+
+6_) Uygulamayı CLI ile çalıştırmak: Bunun için bir kaç yol var;
+=> Eğer kaynak kodun bulunduğu dosyada iken uygulama çalıştırılacaksa: 'dotnet run' komutu yeterlidir
+=> Pulish dosyasından çalıştırma işlemi yapılacaksa: 'dotnet <Çalıştırılacak Dll Adı>(dotnet WebAppCoreExample.dll)'
+
+
+
+
+
+
+
+
+
+
+_Linux Dağıtımları & Kısaltmaları_
+CentOS 7 (centos.7-x64)
+Fedora 25 (fedora.25-x64)
+Fedora 26 (fedora.26-x64)
+Debian 9 (linux-x64)
+Ubuntu 14.04 (ubuntu.14.04-x64)
+Ubuntu 16.04 (ubuntu.16.04-x64)
+Ubuntu 17.04 (linux-x64)
+Linux Mint 18.2 (linux-x64)
+openSUSE 42.2 (linux-x64)
